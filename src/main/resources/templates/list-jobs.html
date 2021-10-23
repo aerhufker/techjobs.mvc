@@ -12,27 +12,6 @@
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-<!--    <table class="job-listing">-->
-<!--&lt;!&ndash;        <th:block th:each="jobs: ${fieldName}">&ndash;&gt;-->
-<!--        <th:block th:each="category : ${tableChoices}">-->
-<!--            <li th:utext="${jobs}" ></li>-->
-<!--            <ol>-->
-<!--                <li th:each="jobs: ${all}"></li>-->
-<!--            </ol>-->
-<!--            <ol>-->
-<!--                <li th:each="jobs: ${location}"></li>-->
-<!--            </ol>-->
-<!--            <ol>-->
-<!--                <li th:each="jobs: ${employer}"></li>-->
-<!--            </ol>-->
-<!--            <ol>-->
-<!--                <li th:each="jobs: ${positionType}"></li>-->
-<!--            </ol>-->
-<!--            <ol>-->
-<!--                <li th:each="jobs: ${coreCompetency}"></li>-->
-<!--            </ol>-->
-<!--        </th:block>-->
-<!--    </table>-->
     <table th:each="job: ${jobs}" class="job-listing">
         <tr>
             <td>ID</td>
